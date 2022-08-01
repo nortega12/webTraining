@@ -1,0 +1,55 @@
+/**
+* All Rights Reserved
+* This software is property information of AKUREY S.A.
+* Contact us at contact@akurey.com
+* @summary task 01 style sheet
+*/
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    gap: 20px;
+    margin: auto;
+    width: 940px;
+    height: 279.65px;
+}
+
+.grid-item {
+    height: 279px;
+    width: 219.74px;
+    border-radius: 20.5295px;
+}
+
+#img-monkey {
+    background:
+    linear-gradient(179.8deg, rgba(255, 255, 255, 0) 50.33%, #000000 97.62%),
+    url('../images/monkey.png');
+    
+}
+
+#img-portgas {
+    background-image:
+    linear-gradient(179.8deg, rgba(255, 255, 255, 0) 50.33%, #000000 97.62%),
+    url('../images/portgas.png');
+}
+
+#img-roronoa {
+    background-image:
+    linear-gradient(179.8deg, rgba(255, 255, 255, 0) 50.33%, #000000 97.62%),
+    url('../images/roronoa.png');
+}
+
+#img-nico {
+    background-image:
+    linear-gradient(179.8deg, rgba(255, 255, 255, 0) 50.33%, #000000 97.62%),
+    url('../images/nico.png');
+}
+
+.img-text {
+    position: relative;
+    top: 211.36px;
+    color: white;
+    font-size: 22px;
+    font-family: 'Roboto Slab';
+    text-align: center;
+}
+
