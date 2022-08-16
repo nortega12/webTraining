@@ -1,0 +1,616 @@
+/**
+* All Rights Reserved
+* This software is property information of AKUREY S.A.
+* Contact us at contact@akurey.com
+* @summary style of the home section of the one piece website
+*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body {
+  padding-top: 88px;
+}
+
+/* mobile version */
+.navbar-light .navbar-toggler {
+  position: absolute;
+  left: 19px;
+  right: 110px;
+  top: 30px;
+  width: 50px;
+  color: transparent;
+  border-color: transparent;
+}
+.navbar-light .navbar-toggler .icon-align-left {
+  color: rgba(23, 23, 23, 0.6);
+}
+.navbar-light .navbar-toggler .icon-times {
+  color: #7D7D7D;
+}
+.navbar-light .navbar-nav .nav-link {
+  font-family: "Roboto Slab";
+  color: #575757;
+  text-align: center;
+  font-size: 18px;
+  padding: 30px 48px;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #0C75AF;
+}
+.navbar-light .one-piece-logo {
+  width: 112px;
+  height: 40px;
+}
+.navbar-light .flags-container {
+  display: grid;
+  grid-template-columns: 169px 169px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  width: 358px;
+  margin: auto;
+  padding-top: 16px;
+}
+.navbar-light .flags-container .flag-item {
+  display: flex;
+  justify-content: center;
+  width: 169px;
+  align-items: center;
+}
+.navbar-light .flags-container .flag-item .flag-text {
+  font-family: "Roboto Slab";
+  color: #575757;
+  text-align: center;
+  font-size: 18px;
+  margin: auto 0;
+  padding-right: 8px;
+}
+.navbar-light .flags-container .flag-item:hover {
+  background-color: #ECECEC;
+}
+
+.navbar-toggler[aria-expanded=true] .icon-times {
+  display: inline;
+}
+.navbar-toggler[aria-expanded=true] .icon-align-left {
+  display: none;
+}
+
+.navbar-toggler[aria-expanded=false] .icon-times {
+  display: none;
+}
+.navbar-toggler[aria-expanded=false] .icon-align-left {
+  color: #7D7D7D;
+}
+
+.one-piece-container .img-one-piece-group {
+  width: 100%;
+  height: auto;
+  -webkit-mask-image: linear-gradient(360deg, rgba(196, 196, 196, 0) 0%, #FFFFFF 91.54%);
+          mask-image: linear-gradient(360deg, rgba(196, 196, 196, 0) 0%, #FFFFFF 91.54%);
+}
+.one-piece-container #img-second-logo {
+  display: none;
+  margin: auto;
+  padding-bottom: 6px;
+}
+
+/*sinopsis container*/
+.sinopsis-container {
+  margin: 19px 16px 5px;
+  padding: 8px 8px 0px;
+  box-shadow: 0px 0px 8px #B8E1FF;
+  border-radius: 6px;
+}
+.sinopsis-container .sinopsis-texts-container {
+  border-bottom: 0.5px solid #0C75AF;
+  padding-bottom: 16px;
+}
+.sinopsis-container .sinopsis-texts-container .sinopsis-title {
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+.sinopsis-container .sinopsis-texts-container .sinopsis-text {
+  margin: 0;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+.sinopsis-container .sinopsis-texts-container #sinopsis-text-two {
+  display: none;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+.sinopsis-container .sinopsis-read-all {
+  display: grid;
+  grid-template-columns: 16px 110px;
+  -moz-column-gap: 0px;
+       column-gap: 0px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  color: #0C75AF;
+  font-size: 18px;
+}
+
+.main-info-container {
+  margin-left: 16px;
+}
+
+/* search bar*/
+.col-12 {
+  padding-left: 0px;
+}
+.col-12 .input-group {
+  margin-top: 38px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+}
+.col-12 .input-group .input-group-text {
+  background-color: transparent;
+  border-right: transparent;
+}
+.col-12 .input-group .input-group-text .icon-search {
+  color: #7D7D7D;
+}
+.col-12 .input-group .form-control {
+  height: 56px;
+  border-left: transparent;
+}
+
+.titles-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: center;
+  margin: 48px 16px 32px 0px;
+  height: 24px;
+  overflow: hidden;
+}
+.titles-container .section-titles {
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  font-size: 18px;
+}
+.titles-container .see-all-titles {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  color: #0C75AF;
+}
+
+/* characters container*/
+.characters-photo-container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  margin: auto;
+  width: 773px;
+}
+.characters-photo-container .characters-photo-item {
+  height: 231px;
+  width: 182px;
+  border-radius: 21px;
+}
+.characters-photo-container .characters-photo-item .characters-photo-text {
+  position: relative;
+  top: 175px;
+  text-align: center;
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  color: white;
+  font-size: 18px;
+}
+
+#img-monkey {
+  background-image: linear-gradient(179.8deg, rgba(255, 255, 255, 0) 50.33%, #000000 97.62%), url("/images/monkey.png");
+}
+
+#img-portgas {
+  background-image: linear-gradient(179.8deg, rgba(255, 255, 255, 0) 50.33%, #000000 97.62%), url("/images/portgas.png");
+}
+
+#img-roronoa {
+  background-image: linear-gradient(179.8deg, rgba(255, 255, 255, 0) 50.33%, #000000 97.62%), url("/images/roronoa.png");
+}
+
+#img-nico {
+  background-image: linear-gradient(179.8deg, rgba(255, 255, 255, 0) 50.33%, #000000 97.62%), url("/images/nico.png");
+}
+
+/*islands container*/
+.islands-photo-frames {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  -moz-column-gap: 17px;
+       column-gap: 17px;
+  margin: auto;
+  width: 616px;
+}
+.islands-photo-frames .islands-photo-item {
+  height: 193px;
+  width: 194px;
+  border-radius: 8px;
+}
+
+#img-goa {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/goa-kingdom.png");
+}
+
+#img-reverse {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/reverse-mountain.png");
+}
+
+.island-text-frame {
+  position: relative;
+  width: 178px;
+  height: 48px;
+  margin: auto;
+  top: 137px;
+  background: rgba(0, 96, 150, 0.59);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border-radius: 6px;
+}
+.island-text-frame .island-title {
+  margin: 4px 0px 0px 15px;
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  font-size: 13px;
+  color: white;
+}
+.island-text-frame .island-location {
+  display: grid;
+  grid-template-columns: 15px 100px;
+  margin-left: 12px;
+}
+.island-text-frame .island-location .icon-map-marker {
+  color: white;
+}
+.island-text-frame .island-location .island-text {
+  padding-top: 2px;
+  margin: 0px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+}
+
+/* mist objects */
+.objects-photo-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto 16px auto auto;
+}
+.objects-photo-container .objects-photo-item {
+  border-radius: 8px;
+  margin-bottom: 16px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/mist-object.png"), no-repeat;
+  background-repeat: no-repeat;
+  background-size: 174px 132px;
+}
+.objects-photo-container #last-obj-item {
+  display: none;
+}
+
+.object-text-frame {
+  position: relative;
+  height: 132px;
+  margin-left: 117px;
+  padding: 8px;
+  border-radius: 0px 6px 6px 0px;
+  background: rgba(0, 96, 150, 0.59);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+.object-text-frame .mist-obj-title {
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  color: white;
+  font-size: 13px;
+  margin: 0;
+}
+.object-text-frame .mist-obj-text {
+  font-family: "Roboto";
+  font-weight: 400;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  margin: 0px;
+  line-height: 16px;
+}
+
+/*footer*/
+.footer-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0C75AF;
+  padding: 48px 0;
+  margin-top: 70px;
+}
+.footer-container .footer-img {
+  width: 97px;
+  height: 89px;
+}
+.footer-container .footer-text-container {
+  font-family: "Roboto";
+  font-weight: 400;
+  width: 286px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  padding-top: 38px;
+}
+.footer-container .footer-text-container .footer-text {
+  margin: 0;
+  color: white;
+}
+
+/*tablet version*/
+@media only screen and (min-width: 768px) {
+  body {
+    padding-top: 108px;
+  }
+  .navbar-light .navbar-toggler {
+    left: 55px;
+    top: 40px;
+  }
+  .navbar-light .one-piece-logo {
+    width: 163px;
+    height: 58px;
+  }
+  .sinopsis-container {
+    background-color: white;
+    margin: -60px 64px 10px 64px;
+    position: relative;
+    z-index: 20;
+  }
+  .one-piece-container .img-one-piece-group {
+    -webkit-mask-image: linear-gradient(360deg, rgba(0, 0, 0, 0) 0%, #000000 0%);
+            mask-image: linear-gradient(360deg, rgba(0, 0, 0, 0) 0%, #000000 0%);
+  }
+  .one-piece-container #img-second-logo {
+    margin-top: -64px;
+  }
+  .main-info-container {
+    margin: 0 64px;
+  }
+  .col-12 {
+    padding-right: 0px;
+  }
+  .titles-container {
+    margin: 48px 0px 32px 0px;
+  }
+  .main-photos-container {
+    padding: 0 0 42px 0;
+  }
+  .characters-photo-container {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    width: 640px;
+  }
+  .characters-photo-container .characters-photo-item {
+    width: 145px;
+    height: 184px;
+    background-size: 145px 184px;
+  }
+  .characters-photo-container .characters-photo-item .characters-photo-text {
+    top: 139px;
+    font-size: 16px;
+  }
+  .islands-photo-frames {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    width: 640px;
+  }
+  .islands-photo-frames .islands-photo-item {
+    width: 200px;
+    height: 199px;
+    border-radius: 8px;
+  }
+  .islands-photo-frames .islands-photo-item .island-title {
+    margin: 4px 0px 0px 15px;
+  }
+  .objects-photo-container {
+    flex-flow: row wrap;
+    padding: 0;
+    margin: auto;
+    gap: 20px;
+    width: 640px;
+  }
+  .objects-photo-container .objects-photo-item {
+    margin: 0;
+    width: 310px;
+    height: 175px;
+    background-size: 174px 175px;
+    overflow: hidden;
+  }
+  .objects-photo-container .objects-photo-item .object-text-frame {
+    height: 175px;
+    overflow-y: hidden;
+  }
+  .objects-photo-container .objects-photo-item .object-text-frame .mist-obj-title {
+    font-size: 16px;
+  }
+  .objects-photo-container #last-obj-item {
+    display: inline;
+  }
+  .footer-container {
+    padding: 91px 173px;
+    margin: 0;
+    flex-flow: row;
+    -moz-column-gap: 38px;
+         column-gap: 38px;
+  }
+  .footer-container .footer-text-container {
+    text-align: left;
+    padding-top: 0px;
+  }
+}
+/*desktop version*/
+@media only screen and (min-width: 1200px) {
+  .one-piece-logo {
+    margin-right: 69px;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    padding: 0 48px 0 0;
+  }
+  .navbar-expand-xl .navbar-collapse {
+    flex-basis: 708px;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  .navbar-light .flags-container {
+    grid-template-columns: 90px 90px;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar-light .flags-container .flag-item {
+    width: 90px;
+  }
+  .navbar-light .flags-container .flag-item .flag-text {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1280px) and (max-width: 2000px) {
+  .main-photo-info-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: auto;
+    width: 940px;
+    height: 628px;
+    border-radius: 16px;
+    filter: drop-shadow(0px 0px 8px #B8E1FF);
+  }
+  .main-photo-info-container .one-piece-container {
+    width: 640px;
+    height: 628px;
+  }
+  .main-photo-info-container .one-piece-container .img-one-piece-group {
+    width: 640px;
+    height: 628px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 60%;
+       object-position: 60%;
+  }
+  .main-photo-info-container .sinopsis-container {
+    padding: 32px 16px;
+    margin: 0;
+    width: 300px;
+    height: 628px;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+  .main-photo-info-container .sinopsis-container #sinopsis-text-two {
+    display: inline !important;
+  }
+  .main-photo-info-container .sinopsis-container .sinopsis-read-all {
+    display: none;
+  }
+  .main-photo-info-container .sinopsis-container .sinopsis-texts-container {
+    border-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  .main-info-container {
+    margin: 10px 170px 0;
+  }
+  .col-12 {
+    padding-right: 0px;
+  }
+  .titles-container {
+    margin: 48px 0px 32px 0px;
+    height: 36px;
+  }
+  .titles-container .section-titles {
+    font-weight: 400;
+    font-size: 28px;
+  }
+  .titles-container .see-all-titles {
+    margin: auto 0;
+  }
+  .main-photos-container {
+    padding: 0 0 70px 0;
+  }
+  .characters-photo-container {
+    width: 940px;
+  }
+  .characters-photo-container .characters-photo-item {
+    width: 220px;
+    height: 279px;
+    background-size: 220px 279px;
+  }
+  .characters-photo-container .characters-photo-item .characters-photo-text {
+    top: 211px;
+    font-size: 22px;
+  }
+  .islands-photo-frames {
+    width: 940px;
+  }
+  .islands-photo-frames .islands-photo-item {
+    width: 300px;
+    height: 298px;
+    background-size: 300px 298px;
+  }
+  .islands-photo-frames .islands-photo-item .island-text-frame {
+    width: 275px;
+    height: 74px;
+    top: 212px;
+  }
+  .islands-photo-frames .islands-photo-item .island-text-frame .island-title {
+    margin: 8px 0px 0px 23px;
+    font-size: 18px;
+  }
+  .islands-photo-frames .islands-photo-item .island-text-frame .island-location {
+    margin-left: 20px;
+  }
+  .islands-photo-frames .islands-photo-item .island-text-frame .island-location .icon-map-marker {
+    padding-top: 5px;
+  }
+  .islands-photo-frames .islands-photo-item .island-text-frame .island-location .island-text {
+    font-size: 18px;
+  }
+  .objects-photo-container {
+    width: 942px;
+  }
+  .objects-photo-container #last-obj-item {
+    display: inline;
+  }
+  .objects-photo-container .objects-photo-item {
+    width: 461px;
+    height: 254px;
+    background-size: 263px 254px;
+  }
+  .objects-photo-container .objects-photo-item .object-text-frame {
+    height: 254px;
+    overflow-y: hidden;
+  }
+  .objects-photo-container .objects-photo-item .object-text-frame .mist-obj-title {
+    font-size: 18px;
+  }
+  .objects-photo-container .objects-photo-item .object-text-frame .mist-obj-text {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+  }
+}

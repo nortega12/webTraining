@@ -1,0 +1,29 @@
+/**
+* All Rights Reserved
+* This software is property information of AKUREY S.A.
+* Contact us at contact@akurey.com
+* @summary scss with styling/mixins of titles, subtitles,etc
+*/
+$main-font : 'Roboto Slab';
+$sec-font : 'Roboto';
+$nav-font-color : #575757;
+$nav-flag-hover: #ECECEC;
+$blue-tone: #0C75AF;
+
+@mixin nav-font-format() {
+    font-family: $main-font;
+    color: $nav-font-color;
+    text-align: center;
+    font-size: 18px;
+}
+
+@mixin bold-titles(){
+    font-family: $main-font;
+    font-weight: 700;
+}
+
+@mixin normal-texts(){
+    font-family: $sec-font;
+    font-weight: 400;
+}
+
