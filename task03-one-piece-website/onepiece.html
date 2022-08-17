@@ -6,187 +6,230 @@
   @summary html of the home section of the one piece website
 -->
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://file.myfontastic.com/KqubBRuJG8iZrRQgJ3mBeb/icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;700&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../task03-one-piece-website/css/onepiece.css">
-    <script src="onepiece.js"></script>
-    <title>One Piece</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://file.myfontastic.com/KqubBRuJG8iZrRQgJ3mBeb/icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;700&family=Roboto:wght@100;300;400;700&display=swap"
+    rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../task03-one-piece-website/css/onepiece.css" />
+  
+  <title>One Piece</title>
 </head>
+
 <body>
-    <header>
-          <nav class="navbar fixed-top navbar-expand-xl navbar-light bg-white py-4 justify-content-center ">
-            <button  class="navbar-toggler burger-menu" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-              <span id="burger-icon" class="icon-align-left"></span>
-              <span id="burger-icon" class="icon-times"></span>
-            </button>
-            <div class="logo">
-              <img class="one-piece-logo"src="../images/one-piece-logo.png" alt="onepiece">
-            </div>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/characters">Characters</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/islands">Islands</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/mist-objects">Mist Objects</a>
-                </li>
-              </ul>
-              <div class="flags-container">
-                <div class="flag-item" >
-                    <p class="flag-text">English</p>
-                    <img class="flag-img" src="../images/usa-flag.png">
-                </div>
-                <div class="flag-item" >
-                    <p class="flag-text">Spanish</p>
-                    <img class="flag-img" src="../images/spain-flag.png">
-                </div> 
-              </div> 
-            </div>
-          </nav>
-    </header>
-    <div class="main-photo-info-container">
-      <div class="one-piece-container">
-      <img class="img-one-piece-group" src="../images/one-piece-group.png">
-      <img class="img-second-logo" id="img-second-logo" src="../images/one-piece-logo.png">
+  <header>
+    <nav class="navbar fixed-top navbar-expand-xl navbar-light bg-white py-4 justify-content-center">
+      <button class="navbar-toggler burger-menu" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span id="burger-icon" class="icon-align-left"></span>
+        <span id="burger-icon" class="icon-times"></span>
+      </button>
+      <div class="logo">
+        <img class="one-piece-logo" src="../images/one-piece-logo.png" alt="One Piece Logo" />
       </div>
-      <div class="sinopsis-container">
-        <div class="sinopsis-texts-container">
-          <h1 class="sinopsis-title">Sinopsis</h1>
-          <p class="sinopsis-text">Dawn Island is an island located in the East Blue and where the Goa Kingdom is situated.<br><br>
-          It is the home island of Monkey D. Luffy and the starting point of his journey into piracy, as well as the home island of his father, Monkey D. Dragon.
-          </p>
-          <span style="display:none" class="sinopsis-text-two" id="sinopsis-text-two"><br>This is also the adopted home of Portgas D. Ace after the death of his mother and the home of Sabo and his family.<br> <br>Reverse Mountain is an extremely tall mountain at one of the points where the four Blues meet and is one of the two known entrances to the Grand Line.<br><br> It is located in the Red Line and is the geographical antipode of Mary Geoise.</span>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="/">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/characters">Characters</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/islands">Islands</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/mist-objects">Mist Objects</a>
+          </li>
+        </ul>
+        <div class="flags-container">
+          <div class="flag-item">
+            <p class="flag-text">English</p>
+            <img class="flag-img" src="../images/usa-flag.png" />
+          </div>
+          <div class="flag-item">
+            <p class="flag-text">Spanish</p>
+            <img class="flag-img" src="../images/spain-flag.png" />
+          </div>
         </div>
-        <div class="sinopsis-read-all">
-          <span class="icon-angle-down" id="read-all-icon"></span>
-          <p type="button" class="read-all-btn" id="read-all-btn" onclick="readAll()" >Read All</p>
+      </div>
+    </nav>
+  </header>
+  <div class="main-photo-info-container">
+    <div class="one-piece-container">
+      <img class="img-one-piece-group" src="../images/one-piece-group.png" />
+      <img class="img-second-logo" id="img-second-logo" src="../images/one-piece-logo.png" />
+    </div>
+    <div class="sinopsis-container">
+      <div class="sinopsis-texts-container">
+        <h1 class="sinopsis-title">Sinopsis</h1>
+        <p class="sinopsis-text">
+          Dawn Island is an island located in the East Blue and where the Goa
+          Kingdom is situated.<br /><br />
+          It is the home island of Monkey D. Luffy and the starting point of
+          his journey into piracy, as well as the home island of his father,
+          Monkey D. Dragon.
+        </p>
+        <span style="display: none" class="sinopsis-text-two" id="sinopsis-text-two"><br />This is also the adopted home
+          of Portgas D. Ace after the
+          death of his mother and the home of Sabo and his family.<br />
+          <br />Reverse Mountain is an extremely tall mountain at one of the
+          points where the four Blues meet and is one of the two known
+          entrances to the Grand Line.<br /><br />
+          It is located in the Red Line and is the geographical antipode of
+          Mary Geoise.</span>
+      </div>
+      <div class="sinopsis-read-all">
+        <span class="icon-angle-down" id="read-all-icon"></span>
+        <p type="button" class="read-all-btn" id="read-all-btn" onclick="readAll()">
+          Read All
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="main-info-container">
+    <form>
+      <div class="col-12">
+        <div class="input-group w-90 mx-auto">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="icon-search"></i></span>
+          </div>
+          <input type="text" class="form-control search-form-control"
+            placeholder="Search Characters, Islands or Objects" />
+        </div>
+      </div>
+    </form>
+    <div class="main-photos-container">
+      <div class="characters-container">
+        <div class="titles-container">
+          <p class="section-titles">Characters</p>
+          <a href="/characters" class="see-all-titles">See all</a>
+        </div>
+        <div class="characters-photo-container" id="characters-photo-container">
+          <div class="characters-photo-item" id="img-monkey">
+            <p class="characters-photo-text">Monkey D. Luffy</p>
+          </div>
+          <div class="characters-photo-item" id="img-portgas">
+            <p class="characters-photo-text">Portgas D. Ace</p>
+          </div>
+          <div class="characters-photo-item" id="img-roronoa">
+            <p class="characters-photo-text">Roronoa Zoro</p>
+          </div>
+          <div class="characters-photo-item" id="img-nico">
+            <p class="characters-photo-text">Nico Robin</p>
+          </div>
+        </div>
+      </div>
+      <div class="islands-container">
+        <div class="titles-container">
+          <p class="section-titles">Islands</p>
+          <a href="/islands" class="see-all-titles">See all</a>
+        </div>
+        <div class="islands-photo-frames" id="islands-photo-frames">
+          <div class="islands-photo-item" id="img-goa">
+            <div class="island-text-frame">
+              <p class="island-title">Dawn Island</p>
+              <div class="island-location">
+                <i class="icon-map-marker"></i>
+                <p class="island-text">East Blue</p>
+              </div>
+            </div>
+          </div>
+          <div class="islands-photo-item" id="img-reverse">
+            <div class="island-text-frame">
+              <p class="island-title">Reverse Mountain</p>
+              <div class="island-location">
+                <i class="icon-map-marker"></i>
+                <p class="island-text">Red Line</p>
+              </div>
+            </div>
+          </div>
+          <div class="islands-photo-item" id="img-reverse">
+            <div class="island-text-frame">
+              <p class="island-title">Reverse Mountain</p>
+              <div class="island-location">
+                <i class="icon-map-marker"></i>
+                <p class="island-text">Red Line</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mist-obj-container">
+        <div class="titles-container">
+          <p class="section-titles">Mist Objects</p>
+          <a href="/mist-objects" class="see-all-titles">See all</a>
+        </div>
+        <div class="objects-photo-container" id="object-photo-container">
+          <div class="objects-photo-item">
+            <div class="object-text-frame">
+              <p class="mist-obj-title">Gomu Gomu No Mi</p>
+              <p class="mist-obj-text">
+                Is a Paramecia-type Devil Fruit that gives the user's body the
+                properties of rubber, making the user a Rubber Human. It was
+                then accidentally eaten by the series protagonist, Monkey D.
+                Luffy.
+              </p>
+            </div>
+          </div>
+          <div class="objects-photo-item">
+            <div class="object-text-frame">
+              <p class="mist-obj-title">Gomu Gomu No Mi</p>
+              <p class="mist-obj-text">
+                Is a Paramecia-type Devil Fruit that gives the user's body the
+                properties of rubber, making the user a Rubber Human. It was
+                then accidentally eaten by the series protagonist, Monkey D.
+                Luffy.
+              </p>
+            </div>
+          </div>
+          <div class="objects-photo-item">
+            <div class="object-text-frame">
+              <p class="mist-obj-title">Gomu Gomu No Mi</p>
+              <p class="mist-obj-text">
+                Is a Paramecia-type Devil Fruit that gives the user's body the
+                properties of rubber, making the user a Rubber Human. It was
+                then accidentally eaten by the series protagonist, Monkey D.
+                Luffy.
+              </p>
+            </div>
+          </div>
+          <div class="objects-photo-item" id="last-obj-item">
+            <div class="object-text-frame">
+              <p class="mist-obj-title">Gomu Gomu No Mi</p>
+              <p class="mist-obj-text">
+                Is a Paramecia-type Devil Fruit that gives the user's body the
+                properties of rubber, making the user a Rubber Human. It was
+                then accidentally eaten by the series protagonist, Monkey D.
+                Luffy.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="main-info-container">
-      <form>
-        <div class="col-12">
-          <div class="input-group w-90 mx-auto">
-              <div class="input-group-prepend">
-                  <span class="input-group-text"><i class="icon-search" ></i></span>
-              </div>
-              <input type="text" class="form-control search-form-control" placeholder="Search Characters, Islands or Objects">
-          </div>
-        </div>
-      </form>
-      <div class="main-photos-container">
-        <div class="characters-container">
-          <div class="titles-container">
-            <p class="section-titles">Characters</p>
-            <a href="/characters" class="see-all-titles">See all</a>
-          </div>
-          <div class="characters-photo-container">
-            <div class="characters-photo-item" id="img-monkey">
-               <p class="characters-photo-text">Monkey D. Luffy</p>
-            </div>
-            <div class="characters-photo-item" id="img-portgas">
-                <p class="characters-photo-text">Portgas D. Ace</p>
-            </div>
-            <div class="characters-photo-item" id="img-roronoa">
-               <p class="characters-photo-text">Roronoa Zoro</p>
-            </div>
-            <div class="characters-photo-item" id="img-nico">
-               <p class="characters-photo-text">Nico Robin</p>
-            </div>
-          </div>  
-        </div>
-        <div class="islands-container">
-          <div class="titles-container">
-            <p class="section-titles">Islands</p>
-            <a href="/islands" class="see-all-titles">See all</a>
-          </div>
-          <div class="islands-photo-frames">
-            <div class="islands-photo-item" id="img-goa">
-              <div class="island-text-frame">
-                <p class="island-title">Dawn Island</p>
-                <div class="island-location">
-                  <i class="icon-map-marker"></i>
-                  <p class="island-text">East Blue</p>
-                </div>
-              </div>
-            </div>
-            <div class="islands-photo-item" id="img-reverse">
-              <div class="island-text-frame">
-                <p class="island-title">Reverse Mountain</p>
-                <div class="island-location">
-                  <i class="icon-map-marker"></i>
-                  <p class="island-text">Red Line</p>
-                </div>
-              </div>
-            </div>
-            <div class="islands-photo-item" id="img-reverse">
-              <div class="island-text-frame">
-                <p class="island-title">Reverse Mountain</p>
-                <div class="island-location">
-                  <i class="icon-map-marker"></i>
-                  <p class="island-text">Red Line</p>
-                </div>
-              </div>
-            </div>
-          </div> 
-        </div>
-        <div class="mist-obj-container">
-          <div class="titles-container">
-            <p class="section-titles">Mist Objects</p>
-            <a href="/mist-objects" class="see-all-titles">See all</a>
-          </div>
-          <div class="objects-photo-container">
-            <div class="objects-photo-item">
-              <div class="object-text-frame">
-                <p class="mist-obj-title">Gomu Gomu No Mi</p>
-                <p class="mist-obj-text">Is a Paramecia-type Devil Fruit that gives the user's body the properties of rubber, making the user a Rubber Human. It was then accidentally eaten by the series protagonist, Monkey D. Luffy.</p>
-              </div>
-            </div>
-            <div class="objects-photo-item">
-              <div class="object-text-frame">
-                <p class="mist-obj-title">Gomu Gomu No Mi</p>
-                <p class="mist-obj-text">Is a Paramecia-type Devil Fruit that gives the user's body the properties of rubber, making the user a Rubber Human. It was then accidentally eaten by the series protagonist, Monkey D. Luffy.</p>
-              </div>
-            </div>
-            <div class="objects-photo-item">
-              <div class="object-text-frame">
-                <p class="mist-obj-title">Gomu Gomu No Mi</p>
-                <p class="mist-obj-text">Is a Paramecia-type Devil Fruit that gives the user's body the properties of rubber, making the user a Rubber Human. It was then accidentally eaten by the series protagonist, Monkey D. Luffy.</p>
-              </div>
-            </div>
-            <div class="objects-photo-item" id="last-obj-item">
-              <div class="object-text-frame">
-                <p class="mist-obj-title">Gomu Gomu No Mi</p>
-                <p class="mist-obj-text">Is a Paramecia-type Devil Fruit that gives the user's body the properties of rubber, making the user a Rubber Human. It was then accidentally eaten by the series protagonist, Monkey D. Luffy.</p>
-              </div>
-            </div>
-          </div> 
-        </div>
+  </div>
+  <footer>
+    <div class="footer-container">
+      <img class="footer-img" src="../images/footer.png" />
+      <div class="footer-text-container">
+        <p class="footer-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit at
+          vel congue scelerisque tortor tortor.
+        </p>
       </div>
     </div>
-    <footer>
-      <div class="footer-container">
-        <img class="footer-img" src="../images/footer.png">
-        <div class="footer-text-container">
-          <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit at vel congue scelerisque tortor tortor.</p>
-        </div>
-      </div>
-    </footer>
+  </footer>
 </body>
+<script src="onepiece.js"></script>
 </html>

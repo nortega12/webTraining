@@ -4,6 +4,12 @@
 * Contact us at contact@akurey.com
 * @summary style of the home section of the one piece website
 */
+/**
+* All Rights Reserved
+* This software is property information of AKUREY S.A.
+* Contact us at contact@akurey.com
+* @summary scss with styling/mixins of titles, subtitles,etc
+*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -37,6 +43,9 @@ body {
   text-align: center;
   font-size: 18px;
   padding: 30px 48px;
+}
+.navbar-light .navbar-nav .nav-link.active {
+  color: #0C75AF;
 }
 .navbar-light .navbar-nav .nav-link:hover {
   color: #0C75AF;

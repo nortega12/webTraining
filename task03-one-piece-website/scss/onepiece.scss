@@ -35,7 +35,7 @@ body {
         }
 
         .icon-times {
-            color: #7D7D7D;
+            color: $icon-gray;
         }
 
     }
@@ -45,6 +45,11 @@ body {
         .nav-link {
             @include nav-font-format();
             padding: 30px 48px;
+            
+        }
+
+        .nav-link.active {
+            color: $blue-tone;
         }
 
         .nav-link:hover {
@@ -101,8 +106,7 @@ body {
         display: none;
     }
     .icon-align-left {
-        
-        color: #7D7D7D;
+        color: $icon-gray;
     }
 }
 
