@@ -6,10 +6,10 @@
  */
 
 function readAll() {
-    let moreText = document.getElementById('sinopsis-text-two');
-    let moreTextBtn = document.getElementById('read-all-btn');
-    let moreTextIcon = document.getElementById('read-all-icon');
-    let secondLogo = document.getElementById('img-second-logo');
+    const moreText = document.getElementById('sinopsis-text-two');
+    const moreTextBtn = document.getElementById('read-all-btn');
+    const moreTextIcon = document.getElementById('read-all-icon');
+    const secondLogo = document.getElementById('img-second-logo');
     if (moreText.style.display === "none") {
         moreText.style.display = "inline";
         secondLogo.style.display = "block";

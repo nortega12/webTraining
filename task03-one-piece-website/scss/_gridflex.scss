@@ -1,0 +1,13 @@
+@mixin grid-format( $columns, $gap:0) {
+    display: grid;
+    grid-template-columns: $columns;
+    column-gap: $gap;
+
+}
+
+@mixin flex-format($justify:flex-start, $alignItem:stretch, $alignCont:stretch) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $alignItem;
+    align-content: $alignCont;
+}

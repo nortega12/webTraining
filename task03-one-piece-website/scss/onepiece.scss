@@ -5,6 +5,7 @@
 * @summary style of the home section of the one piece website
 */
 @import 'font-style';
+@import 'gridflex';
 
 * {
     box-sizing: border-box;
@@ -64,19 +65,15 @@ body {
 
     .flags-container {
 
-        display: grid;
-        grid-template-columns: 169px 169px;
-        column-gap: 20px;
+        @include grid-format(169px 169px, 20px);
         width: 358px;
         margin: auto;
         padding-top: 16px;
 
         .flag-item {
-            display: flex;
-            justify-content: center;
+        
             width: 169px;
-            align-items: center;
-    
+            @include flex-format(center,center);
             .flag-text {
                 @include nav-font-format();
                 margin: auto 0;
@@ -140,8 +137,8 @@ body {
         border-bottom: 0.5px solid $blue-tone;
         padding-bottom: 16px;
         .sinopsis-title {
-            @include bold-titles();
-            font-size: 22px;
+            
+            @include font-format($main-font,700,22px);
             line-height: 28px;
             margin-bottom: 16px;
             overflow: hidden;
@@ -149,32 +146,26 @@ body {
 
         .sinopsis-text {
             margin: 0;
-            @include normal-texts();
-            font-size: 16px;
+            @include font-format($sec-font,400,16px,0.25px);
             line-height: 20px;
-            letter-spacing: 0.25px;
+
         }
 
         #sinopsis-text-two {
             display: none;
-            @include normal-texts();
-            font-size: 16px;
+            @include font-format($sec-font,400,16px,0.25px);
             line-height: 20px;
-            letter-spacing: 0.25px;
+
         }
     
     }
 
     .sinopsis-read-all {
-        display: grid;
-        grid-template-columns: 16px 110px;
-        column-gap: 0px;
+        @include grid-format(16px 110px, 0px);
         justify-content: center;
         text-align: center;
         margin-top: 16px;
-        @include normal-texts();
-        color: $blue-tone;
-        font-size: 18px;
+        @include font-format($sec-font,400,18px,0,$blue-tone);
     }
 
 }
@@ -192,8 +183,7 @@ body {
     .input-group {
 
         margin-top: 38px;
-        @include normal-texts();
-        font-size: 16px;
+        @include font-format($sec-font,400,16px);
 
         .input-group-text {
 
@@ -214,32 +204,25 @@ body {
 
 .titles-container {
 
-    display: flex;
-    justify-content: space-between;
-    align-items:flex-start;
-    align-content: center;
+    @include flex-format(space-between,flex-start,center);
     margin: 48px 16px 32px 0px;
     height: 24px;
     overflow: hidden;
 
    .section-titles {
-        @include bold-titles();
-        font-size: 18px;
+        @include font-format($main-font,700,18px);
    }
 
    .see-all-titles {
-        @include normal-texts();
-        font-size: 16px;
-        color: $blue-tone;
+        @include font-format($sec-font,400,16px,0,$blue-tone);
    }
 }
 
 /* characters container*/
 
 .characters-photo-container {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    column-gap: 15px;
+    
+    @include grid-format(repeat(4,auto), 15px);
     margin: auto;
     width: 773px;
 
@@ -252,9 +235,7 @@ body {
             position: relative;
             top: 175px;
             text-align: center;
-            @include bold-titles();
-            color: white;
-            font-size: 18px;
+            @include font-format($main-font, 700,18px,0,white);
         }
     }
 }
@@ -287,9 +268,8 @@ body {
  /*islands container*/
 
 .islands-photo-frames {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    column-gap: 17px;
+    
+    @include grid-format(repeat(3, auto), 17px);
     margin: auto;
     width: 616px;
 
@@ -322,26 +302,20 @@ body {
 
     .island-title {
         margin: 4px 0px 0px 15px; 
-        @include bold-titles();
-        font-size: 13px;
-        color: white;
+        @include font-format($main-font,700,13px,0,white);
     }
 
     .island-location {
-        display: grid;
-        grid-template-columns: 15px 100px;
-        margin-left:12px;
 
+        margin-left:12px;
+        @include grid-format(15px 100px);
         .icon-map-marker {
             color: white;
         }
         .island-text {
             padding-top: 2px;
             margin:0px;
-            @include normal-texts();
-            font-size: 14px;
-            color: white;
-            
+            @include font-format($sec-font,400,14px,0, white);
         }
     }
 }
@@ -349,7 +323,7 @@ body {
 /* mist objects */
 
 .objects-photo-container {
-    display: flex;
+    @include flex-format();
     flex-direction: column;
     margin: auto 16px auto auto;
     
@@ -379,20 +353,15 @@ body {
     backdrop-filter: blur(4px);
     
     .mist-obj-title {
-        @include bold-titles();
-        color: white;
-        font-size: 13px;
+        @include font-format($main-font, 700,13px,0,white);
         margin:0;
     }
     
     .mist-obj-text {
-        @include normal-texts();
-        color: white;
-        font-size: 14px;
-        letter-spacing: 0.4px;
+        @include font-format($sec-font,400,14px,0.4px,white);
         margin:0px;
-        line-height: 16px;
-                    
+        line-height: 16px;  
+
     }
     
 }
@@ -400,10 +369,8 @@ body {
 /*footer*/
 
 .footer-container {
-    display: flex;
+    @include flex-format(center,center);
     flex-flow: column;
-    justify-content: center;
-    align-items: center;
     background-color: #0C75AF;
     padding: 48px 0;
     margin-top: 70px;
@@ -415,7 +382,6 @@ body {
 
     .footer-text-container {
 
-        @include normal-texts();
         width: 286px;
         text-align: center;
         font-size: 14px;
@@ -424,7 +390,7 @@ body {
 
         .footer-text {
             margin: 0;
-            color: white;
+            @include font-format($sec-font,400,14px,0,white);
         }
     }
 }
@@ -595,9 +561,8 @@ body {
 @media only screen and (min-width: 1280px ) and (max-width:2000px) {
     
     .main-photo-info-container {
-        display: flex;
+        @include flex-format(flex-start, flex-start);
         flex-direction: row;
-        align-items: flex-start;
         margin: auto;
         width: 940px;
         height: 628px;

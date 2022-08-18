@@ -18,13 +18,11 @@ $icon-gray : #7D7D7D;
     font-size: 18px;
 }
 
-@mixin bold-titles(){
-    font-family: $main-font;
-    font-weight: 700;
-}
-
-@mixin normal-texts(){
-    font-family: $sec-font;
-    font-weight: 400;
+@mixin font-format($family,$weight,$fontsize, $spacing:0px, $color:black){
+    font-family: $family;
+    font-weight: $weight;
+    font-size: $fontsize;
+    letter-spacing: $spacing;
+    color: $color;
 }
 
