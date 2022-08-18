@@ -221,38 +221,39 @@ body {
   -moz-column-gap: 15px;
        column-gap: 15px;
   margin: auto;
-  width: 773px;
 }
 .characters-photo-container .characters-photo-item {
   height: 231px;
   width: 182px;
   border-radius: 21px;
+  overflow: hidden;
+}
+.characters-photo-container .characters-photo-item .photo-filter {
+  position: relative;
+  width: 182px;
+  height: 231px;
+  margin: auto;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #000000 97%);
+  border-radius: 21px;
+  box-sizing: border-box;
+  z-index: 20;
+}
+.characters-photo-container .characters-photo-item .characters-photo {
+  height: 231px;
+  width: 182px;
+  margin-top: -250px;
 }
 .characters-photo-container .characters-photo-item .characters-photo-text {
   position: relative;
-  top: 175px;
   text-align: center;
+  width: 100%;
+  top: -70px;
+  z-index: 30;
   font-family: "Roboto Slab";
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 0;
   color: white;
-}
-
-#img-monkey {
-  background-image: linear-gradient(179.8deg, rgba(255, 255, 255, 0) 50.33%, #000000 97.62%), url("/images/monkey.png");
-}
-
-#img-portgas {
-  background-image: linear-gradient(179.8deg, rgba(255, 255, 255, 0) 50.33%, #000000 97.62%), url("/images/portgas.png");
-}
-
-#img-roronoa {
-  background-image: linear-gradient(179.8deg, rgba(255, 255, 255, 0) 50.33%, #000000 97.62%), url("/images/roronoa.png");
-}
-
-#img-nico {
-  background-image: linear-gradient(179.8deg, rgba(255, 255, 255, 0) 50.33%, #000000 97.62%), url("/images/nico.png");
 }
 
 /*islands container*/
@@ -268,14 +269,11 @@ body {
   height: 193px;
   width: 194px;
   border-radius: 8px;
+  overflow: hidden;
 }
-
-#img-goa {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/goa-kingdom.png");
-}
-
-#img-reverse {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/reverse-mountain.png");
+.islands-photo-frames .islands-photo-item .img-island {
+  height: 193px;
+  width: 194px;
 }
 
 .island-text-frame {
@@ -283,7 +281,7 @@ body {
   width: 178px;
   height: 48px;
   margin: auto;
-  top: 137px;
+  top: -60px;
   background: rgba(0, 96, 150, 0.59);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
@@ -329,9 +327,12 @@ body {
 .objects-photo-container .objects-photo-item {
   border-radius: 8px;
   margin-bottom: 16px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/mist-object.png"), no-repeat;
-  background-repeat: no-repeat;
-  background-size: 174px 132px;
+  height: 132px;
+  overflow: hidden;
+}
+.objects-photo-container .objects-photo-item .obj-img {
+  height: 132px;
+  width: 174px;
 }
 .objects-photo-container #last-obj-item {
   display: none;
@@ -339,13 +340,14 @@ body {
 
 .object-text-frame {
   position: relative;
-  height: 132px;
+  height: 137px;
   margin-left: 117px;
   padding: 8px;
   border-radius: 0px 6px 6px 0px;
   background: rgba(0, 96, 150, 0.59);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
+  top: -132px;
 }
 .object-text-frame .mist-obj-title {
   font-family: "Roboto Slab";
@@ -445,8 +447,17 @@ body {
     background-size: 145px 184px;
   }
   .characters-photo-container .characters-photo-item .characters-photo-text {
-    top: 139px;
+    top: -65px;
     font-size: 16px;
+  }
+  .characters-photo-container .characters-photo-item .photo-filter {
+    width: 145px;
+    height: 184px;
+  }
+  .characters-photo-container .characters-photo-item .characters-photo {
+    width: 145px;
+    height: 184px;
+    margin-top: -210px;
   }
   .islands-photo-frames {
     -moz-column-gap: 20px;
@@ -456,7 +467,10 @@ body {
   .islands-photo-frames .islands-photo-item {
     width: 200px;
     height: 199px;
-    border-radius: 8px;
+  }
+  .islands-photo-frames .islands-photo-item .img-island {
+    width: 200px;
+    height: 199px;
   }
   .islands-photo-frames .islands-photo-item .island-title {
     margin: 4px 0px 0px 15px;
@@ -475,7 +489,11 @@ body {
     background-size: 174px 175px;
     overflow: hidden;
   }
+  .objects-photo-container .objects-photo-item .obj-img {
+    height: 175px;
+  }
   .objects-photo-container .objects-photo-item .object-text-frame {
+    top: -174px;
     height: 175px;
     overflow-y: hidden;
   }
@@ -595,8 +613,17 @@ body {
     background-size: 220px 279px;
   }
   .characters-photo-container .characters-photo-item .characters-photo-text {
-    top: 211px;
+    top: -80px;
     font-size: 22px;
+  }
+  .characters-photo-container .characters-photo-item .photo-filter {
+    width: 220px;
+    height: 279px;
+  }
+  .characters-photo-container .characters-photo-item .characters-photo {
+    width: 220px;
+    height: 279px;
+    margin-top: -300px;
   }
   .islands-photo-frames {
     width: 940px;
@@ -606,22 +633,26 @@ body {
     height: 298px;
     background-size: 300px 298px;
   }
-  .islands-photo-frames .islands-photo-item .island-text-frame {
-    width: 275px;
-    height: 74px;
-    top: 212px;
+  .islands-photo-frames .islands-photo-item .img-island {
+    width: 300px;
+    height: 298px;
   }
-  .islands-photo-frames .islands-photo-item .island-text-frame .island-title {
+  .islands-photo-frames .islands-photo-item .island-title {
     margin: 8px 0px 0px 23px;
     font-size: 18px;
   }
-  .islands-photo-frames .islands-photo-item .island-text-frame .island-location {
+  .island-text-frame {
+    width: 275px;
+    height: 74px;
+    top: -90px;
+  }
+  .island-text-frame .island-location {
     margin-left: 20px;
   }
-  .islands-photo-frames .islands-photo-item .island-text-frame .island-location .icon-map-marker {
+  .island-text-frame .island-location .icon-map-marker {
     padding-top: 5px;
   }
-  .islands-photo-frames .islands-photo-item .island-text-frame .island-location .island-text {
+  .island-text-frame .island-location .island-text {
     font-size: 18px;
   }
   .objects-photo-container {
@@ -635,8 +666,13 @@ body {
     height: 254px;
     background-size: 263px 254px;
   }
-  .objects-photo-container .objects-photo-item .object-text-frame {
+  .objects-photo-container .objects-photo-item .obj-img {
+    width: 263px;
     height: 254px;
+  }
+  .objects-photo-container .objects-photo-item .object-text-frame {
+    top: -255px;
+    height: 255px;
     overflow-y: hidden;
   }
   .objects-photo-container .objects-photo-item .object-text-frame .mist-obj-title {
