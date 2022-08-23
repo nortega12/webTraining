@@ -25,15 +25,13 @@ export async function fetchOnePieceData(){
     
     try {
         let onePieceInfo = await fetch(OnePieceUrl)
-        .then( (response) => response.json())
-        .catch( (error) => console.log(error));
-
+        .then( (response) => response.json());
         sortArray(onePieceInfo.islands);
         sortArray(onePieceInfo.characters);
         sortArray(onePieceInfo.mysticObjects);
 
         return await onePieceInfo;
     } catch (error) {
-        console.log(error);
+        alert(error);
     }
 }

@@ -12,7 +12,6 @@ let OnePieceInformation;
 
 window.onload = async () => {
     OnePieceInformation = await fetchOnePieceData();
-    console.log(OnePieceInformation);
     fillMysticObjects();
     fillIslands();
     fillCharacters();
