@@ -495,7 +495,7 @@ body {
   .objects-photo-container .objects-photo-item .object-text-frame {
     top: -174px;
     height: 175px;
-    overflow-y: scroll;
+    overflow-y: hidden;
   }
   .objects-photo-container .objects-photo-item .object-text-frame .mist-obj-title {
     font-size: 16px;
