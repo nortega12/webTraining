@@ -1,0 +1,149 @@
+@import 'font-style';
+@import 'gridflex';
+
+/* mobile version */
+
+.navbar-light {
+
+    .navbar-toggler {
+        position: absolute;
+        left: 19px;
+        right: 110px;
+        top: 30px;
+        width: 50px;
+        color: transparent;
+        border-color: transparent;
+
+        .icon-align-left {
+             color: #17171799;
+        }
+
+        .icon-times {
+            color: $icon-gray;
+        }
+
+    }
+
+    .navbar-nav {
+
+        .nav-link {
+            @include nav-font-format();
+            padding: 30px 48px;
+            
+        }
+
+        .nav-link.active {
+            color: $blue-tone;
+        }
+
+        .nav-link:hover {
+            color: $blue-tone ;
+        }
+    }
+
+    .one-piece-logo {
+        width: 112px;
+        height: 40px;
+    }
+
+    .flags-container {
+
+        @include grid-format(169px 169px, 20px);
+        width: 358px;
+        margin: auto;
+        padding-top: 16px;
+
+        .flag-item {
+        
+            width: 169px;
+            @include flex-format(center,center);
+            .flag-text {
+                @include nav-font-format();
+                margin: auto 0;
+                padding-right: 8px;
+            }
+
+        }
+    
+        .flag-item:hover {
+            background-color: $nav-flag-hover;
+        }
+        
+    }
+}
+
+.navbar-toggler[aria-expanded=true] {
+    .icon-times {
+        display: inline;
+    }
+    .icon-align-left {
+        display: none;
+    }
+}
+
+.navbar-toggler[aria-expanded=false] {
+    .icon-times {
+        display: none;
+    }
+    .icon-align-left {
+        color: $icon-gray;
+    }
+}
+
+/* tablet version*/
+
+@media only screen and (min-width: 768px ) {
+    body{
+        padding-top: 108px;
+    }
+    .navbar-light {
+
+        .navbar-toggler {
+            left: 55px;
+            top: 40px;
+        }
+        
+        .one-piece-logo {
+            width: 163px;
+            height: 58px;
+        }
+    }
+}
+
+/* desktop version */
+
+@media only screen and (min-width: 1200px) {
+
+    .one-piece-logo {
+        margin-right: 69px;
+    }
+
+    .navbar-light {
+        .navbar-nav {
+            .nav-link {
+                padding: 0 48px 0 0;
+            }
+        }
+    }
+    .navbar-expand-xl {
+        .navbar-collapse {
+            flex-basis: 708px;
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+    }
+    .navbar-light {
+        .flags-container {
+            grid-template-columns: 90px 90px;
+            width: 200px;
+            margin: 0;
+            padding: 0;
+            .flag-item{
+                width: 90px;
+                .flag-text{
+                    display: none;
+                }
+            }
+        }
+    }
+  }
