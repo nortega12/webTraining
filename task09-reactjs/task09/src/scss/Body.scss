@@ -1,5 +1,102 @@
+/**
+* All Rights Reserved
+* This software is property information of AKUREY S.A.
+* Contact us at contact@akurey.com
+* @summary scss with styling/mixins for the body
+*/
 @import 'font-style';
 @import 'gridflex';
+
+*{
+    overflow-x: hidden;
+}
+
+.navbar-light {
+
+    .navbar-toggler {
+        position: absolute;
+        left: 19px;
+        right: 110px;
+        top: 30px;
+        width: 50px;
+        color: transparent;
+        border-color: transparent;
+
+        .icon-align-left {
+             color: #17171799;
+        }
+
+        .icon-times {
+            color: $icon-gray;
+        }
+
+    }
+
+    .navbar-nav {
+
+        .nav-link {
+            @include nav-font-format();
+            padding: 30px 48px;
+            
+        }
+
+        .nav-link.active {
+            color: $blue-tone;
+        }
+
+        .nav-link:hover {
+            color: $blue-tone ;
+        }
+    }
+
+    .one-piece-logo {
+        width: 112px;
+        height: 40px;
+    }
+
+    .flags-container {
+
+        @include grid-format(169px 169px, 20px);
+        width: 358px;
+        margin: auto;
+        padding-top: 16px;
+
+        .flag-item {
+        
+            width: 169px;
+            @include flex-format(center,center);
+            .flag-text {
+                @include nav-font-format();
+                margin: auto 0;
+                padding-right: 8px;
+            }
+
+        }
+    
+        .flag-item:hover {
+            background-color: $nav-flag-hover;
+        }
+        
+    }
+}
+
+.navbar-toggler[aria-expanded=true] {
+    .icon-times {
+        display: inline;
+    }
+    .icon-align-left {
+        display: none;
+    }
+}
+
+.navbar-toggler[aria-expanded=false] {
+    .icon-times {
+        display: none;
+    }
+    .icon-align-left {
+        color: $icon-gray;
+    }
+}
 
 .one-piece-container {
 
@@ -62,7 +159,7 @@
 
 }
 
-.main-info-container{
+.main-info-container {
     margin-left: 16px;
 }
 
@@ -232,6 +329,7 @@
     background: rgba(0, 96, 150, 0.59);
     backdrop-filter: blur(4px);
     top: -132px;
+    overflow: scroll;
     .mist-obj-title {
         @include font-format($main-font, 700,13px,0,white);
         margin:0;
@@ -241,7 +339,7 @@
         @include font-format($sec-font,400,14px,0.4px,white);
         margin:0px;
         line-height: 16px;  
-
+        
     }
     
 }
@@ -275,6 +373,22 @@
 }
 
 @media only screen and (min-width: 768px ) {
+        
+    body {
+        padding-top: 108px;
+    }
+    .navbar-light {
+
+        .navbar-toggler {
+            left: 55px;
+            top: 40px;
+        }
+        
+        .one-piece-logo {
+            width: 163px;
+            height: 58px;
+        }
+    }
 
     .sinopsis-container {
         background-color: white;
@@ -374,7 +488,7 @@
             .object-text-frame {
                 top: -174px;
                 height: 175px;
-                overflow-y: sc;
+                overflow-y: scroll;
 
                 .mist-obj-title {
                     font-size: 16px;
@@ -397,8 +511,45 @@
             padding-top: 0px;
         }
 }
-
 }
+
+/* desktop version */
+
+@media only screen and (min-width: 1200px) {
+
+    .one-piece-logo {
+        margin-right: 69px;
+    }
+
+    .navbar-light {
+        .navbar-nav {
+            .nav-link {
+                padding: 0 48px 0 0;
+            }
+        }
+    }
+    .navbar-expand-xl {
+        .navbar-collapse {
+            flex-basis: 708px;
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+    }
+    .navbar-light {
+        .flags-container {
+            grid-template-columns: 90px 90px;
+            width: 200px;
+            margin: 0;
+            padding: 0;
+            .flag-item{
+                width: 90px;
+                .flag-text{
+                    display: none;
+                }
+            }
+        }
+    }
+  }
 
 @media only screen and (min-width: 1280px ) and (max-width:2000px) {
     .main-photo-info-container {

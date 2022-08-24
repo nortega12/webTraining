@@ -1,8 +1,9 @@
 import './scss/App.scss';
-import Header from './header/Header';
-import PhotoInfo from './main-photo-info/Photo-info-container';
-import GeneralInfo from './general-info/General-info';
-import Footer from './footer/Footer';
+import Header from './components/Header';
+import PhotoInfo from './components/Photo-info-container';
+import GeneralInfo from './components/General-info';
+import Footer from './components/Footer';
+
 function App() {
   return (
     <div className="App">
