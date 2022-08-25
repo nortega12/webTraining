@@ -14,7 +14,7 @@ import '../scss/Body.scss';
     
     const fetchOnePieceInfo = async () => {
         const url = 'https://static.akurey.com/trainings/OnePieceInformation.json';
-        try{
+        try {
              const onePieceInfo = await fetch(url)
              const response = await onePieceInfo.json();
 
@@ -22,7 +22,7 @@ import '../scss/Body.scss';
              sortArray(response.characters);
              sortArray(response.mysticObjects);
              setInfo(response);
-        } catch (error){
+        } catch(error) {
          alert(error)
         }
      }
@@ -53,7 +53,7 @@ import '../scss/Body.scss';
                 <div className="characters-photo-container" id="characters-photo-container">
                     {info && info.characters.map((item, index)=>(
                             index < 4 && (
-                                <div className="characters-photo-item">
+                                <div className="characters-photo-item" key={index}>
                                     <div className="photo-filter"></div>
                                     <img src={require(`../images/${item.img}`)} className="characters-photo" alt={item.name} />
                                     <p className="characters-photo-text">{item.name}</p>`;
@@ -71,7 +71,7 @@ import '../scss/Body.scss';
                 <div className="islands-photo-frames" id="islands-photo-frames">
                     {info && info.islands.map((item, index)=>(
                         index < 3 && (
-                            <div className="islands-photo-item">
+                            <div className="islands-photo-item" key={index}>
                                 <img src={require(`../images/${item.img}`)} className="img-island" alt={item.name} />
                                 <div className="island-text-frame">
                                     <p className="island-title">{item.name}</p>
@@ -86,22 +86,25 @@ import '../scss/Body.scss';
                 </div>
             </div>
             <div className="mist-obj-container">
+                
                 <div className="titles-container">
                     <p className="section-titles">Mist Objects</p>
                     <a href="/mist-objects" className="see-all-titles">See all</a>
                 </div>
-                <div className="objects-photo-container" id="object-photo-container">
-                   {info && info.mysticObjects.map((item, index) => (
-                    index < 4 && (
-                        <div className="objects-photo-item" id={index === 3 ? 'last-obj-item' : ''} >
-                            <img src={require("../images/mist-object.png")} className="obj-img" alt="Mystic Object" />
-                            <div className="object-text-frame">
-                                <p className="mist-obj-title">{item.name}</p>
-                                <p className="mist-obj-text">{item.description}</p>
-                            </div>
-                        </div>
-                    )
-                   ))}
+                    <div className="mist-obj-scroll">
+                        <div className="objects-photo-container" id="object-photo-container">
+                        {info && info.mysticObjects.map((item, index) => (
+                            index < 4 && (
+                                <div className="objects-photo-item" key={index} >
+                                    <img src={require("../images/mist-object.png")} className="obj-img" alt="Mystic Object" />
+                                    <div className="object-text-frame">
+                                        <p className="mist-obj-title">{item.name}</p>
+                                        <p className="mist-obj-text">{item.description}</p>
+                                    </div>
+                                </div>
+                            )
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>

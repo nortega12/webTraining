@@ -211,6 +211,7 @@
     
     @include grid-format(repeat(4,auto), 15px);
     margin: auto;
+    overflow-x: scroll;
     .characters-photo-item {
         height: 231px;
         width: 182px;
@@ -251,7 +252,8 @@
     
     @include grid-format(repeat(3, auto), 17px);
     margin: auto;
-    width: 616px;
+    overflow-x: scroll;
+    
 
     .islands-photo-item {
         height: 193px;
@@ -296,12 +298,18 @@
 }
 
 /* mist objects */
+@media only screen and (max-width: 765px ) {
+.mist-obj-scroll{
+    height: 443px;
+    overflow-y: scroll;
+    
+}
+}
 
 .objects-photo-container {
     @include flex-format();
     flex-direction: column;
     margin: auto 16px auto auto;
-    
     .objects-photo-item {
         border-radius: 8px;
         margin-bottom: 16px;
@@ -311,11 +319,6 @@
             height: 132px;
             width: 174px;
         }
-    }
-
-
-    #last-obj-item {
-        display: none;
     }
 
 }
@@ -494,10 +497,6 @@
                     font-size: 16px;
                 }
             }
-        }
-
-        #last-obj-item {
-            display: inline;
         }
     }
 
@@ -686,9 +685,6 @@
     .objects-photo-container {
         
         width: 942px;
-        #last-obj-item {
-            display: inline;
-        }
 
         .objects-photo-item {
             width: 461px;
