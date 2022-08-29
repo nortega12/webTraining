@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML + JS + CSS</title>
+  <link rel="stylesheet" href="src/assets/style.css">
+</head>
+
+<body>
+  <h1>Whack-a-mole! <span class="score">0</span></h1>
+  <div class="cards-container">
+    <div class="score-card">
+      <h2>SCORES</h2>
+      <ul id="score-list">
+
+      </ul>
+    </div>
+    <div class="level-card-container">
+      <h2>Level: <span id="level">1</span></h2>
+    </div>
+  </div>
+  <div class="game">
+  </div>
+  <div class="start-settings-container">
+    <div class="input-container">
+      <label>Enter player's name:</label>
+      <input id="player">
+    </div>
+    <button onClick="game.startGame()">WHACK!</button>
+  </div>
+  <audio id="hihat" src="src/assets/sounds/hihat.wav"></audio>
+  <audio id="kick" src="src/assets/sounds/kick.wav"></audio>
+  <script src="src/game.js"></script>
+</body>
+
+</html>
